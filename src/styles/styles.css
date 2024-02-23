@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+body {
+    background-color: #F3F5FC;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin-right: 8%;
+    display: flex;
+    gap: 100px
+}
+ 
+.conteudo-direita {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.texto {
+    width: 100%;
+    height: 75%;
+    font-size: 25px;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid red;
+}
+
+.texto::placeholder {
+    color: #0A3871;
+    
+}
+
+.texto:focus {
+    outline: none;
+}
+
+.conteudo-direita .final {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.regras {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.regras img {
+    width: 20px;
+    margin-left: 4px;
+}
+
+.regras p {
+    color: #495057;
+}
+
+.conteudo-direita .botoes {
+    display: flex;
+    gap: 15px
+}
+
+.conteudo-direita .botoes button {
+    padding: 18px 100px;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cript{
+    background-color: #0A3871;
+    color: #ffffff;
+    border: none;
+}
+
+.descript {
+    border: 1.5px #0A3871 solid;
+    background-color: #D8DFE8;
+    color: #0A3871
+}
+
+.conteudo-esquerda {
+    margin: 1%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.conteudo-esquerda-itens {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-esquerda img {
+    width: 70%;
+}
+
+.mensagens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.mensagens h2 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.mensagens p {
+    font-size: 15px;
+}
+
+.copiar {
+    padding: 18px 100px;
+    margin-bottom: 10%;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1.5px #0A3871 solid;
+    background-color: #ffffff;
+    color: #0A3871
+}
