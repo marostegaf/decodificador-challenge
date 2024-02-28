@@ -9,6 +9,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
+
 body {
     background-color: #F3F5FC;
 }
@@ -18,17 +19,20 @@ main {
     height: 100vh;
     margin-right: 8%;
     display: flex;
-    gap: 100px
+    justify-content: space-between;
 }
  
-.conteudo-direita {
+.conteudo-esquerda {
     margin-left: 15%;
     margin-top: 5%;
+    margin-bottom: 1.5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .texto {
-    width: 100%;
-    height: 70%;
+    width: 50vw;
+    height: 100%;
     font-size: 25px;
     font-weight: 400;
     background-color: #F3F5FC;
@@ -39,26 +43,25 @@ main {
 }
 
 .texto::placeholder {
-    color: #0a3871b9;
-    
+    color: #0a3871e7;
 }
 
 .texto::-webkit-scrollbar {
     width: 8px;
 }
 
-::-webkit-scrollbar-thumb {
+.texto::-webkit-scrollbar-thumb {
     background-color: #0A3871;
     border-radius: 25px;
     cursor: pointer;
 }
 
-::-webkit-scrollbar-track {
+.texto::-webkit-scrollbar-track {
     background-color: #F3F5FC;
 }
 
-.conteudo-direita .final {
-    margin: 5% 0;
+.conteudo-esquerda .final {
+    margin: 3% 0;
     display: flex;
     flex-direction: column;
 }
@@ -67,7 +70,9 @@ main {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    gap: 5px
+    gap: 5px;
+    cursor: default;
+    
 }
 
 .regras img {
@@ -77,16 +82,19 @@ main {
 
 .regras p {
     font-size: 15px;
-    color: #495057;
+    color: #574949;
+    transition: 0.5s;
 }
 
-.conteudo-direita .botoes {
+.conteudo-esquerda .botoes {
     display: flex;
-    gap: 15px
+    gap: 15px;
+
 }
 
-.conteudo-direita .botoes button {
-    padding: 18px 100px;
+.conteudo-esquerda .botoes button {
+    width: 100%;
+    padding: 18px;
     border-radius: 18px;
     font-size: 15px;
     cursor: pointer;
@@ -98,32 +106,67 @@ main {
     border: none;
 }
 
+.cript:hover {
+    background-color: #0f50a0;
+}
+
 .descript {
     border: 1.5px #0A3871 solid;
     background-color: #D8DFE8;
     color: #0A3871
 }
 
-.conteudo-esquerda {
+.descript:hover {
+    border: 1.5px #0e4a92 solid;
+    background-color: #cfd4db;
+}
+
+.conteudo-direita {
+    width: 25%;
     margin: 2%;
-    padding-top: 5%;
+    padding: 1.3% 1.5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0 0 8px #00000048;
+    overflow-y: auto;
+    word-wrap: break-word;
 }
 
-.conteudo-esquerda-itens {
+.conteudo-direita::-webkit-scrollbar {
+    width: 8px;
+}
+
+.conteudo-direita::-webkit-scrollbar-thumb {
+    background-color: #0A3871;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.conteudo-direita::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.texto_criptografado {
+    display: none;
+    width: 100%;
+    font-size: 20px;
+    color: #0A3871;
+    margin-bottom: 15%;
+}
+
+.conteudo-direita-itens {
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+    margin-top: 35%;
 }
 
-.conteudo-esquerda img {
+.conteudo-direita img {
     width: 70%;
 }
 
@@ -131,8 +174,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 300px;
+    width: 90%;
     text-align: center;
+    cursor: default;
 }
 
 .mensagens h2 {
@@ -146,12 +190,17 @@ main {
 
 .copiar {
     display: none;
-    padding: 18px 100px;
-    margin-bottom: 7.5%;
+    width: 100%;
+    padding: 18px 0;
     border-radius: 18px;
     font-size: 15px;
     cursor: pointer;
     border: 1.5px #0A3871 solid;
     background-color: #ffffff;
-    color: #0A3871
+    color: #0A3871;
+}
+
+.copiar:hover {
+    border: 1.5px #0e4a92 solid;
+    background-color: #e7ecf1;
 }

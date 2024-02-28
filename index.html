@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/responsive.css">
     <link rel="fav icon" href="src/img/favicon3.png">
-    <script src = "" defer></script>
+    <script src = "src/scripts/script.js" defer></script>
     <title>Decodificador</title>
 </head>
 <body>
     <main>
-        <div class="conteudo-direita">
-            <textarea class="texto" required="" placeholder="Digite seu texto" spellcheck="true"></textarea>
+        <div class="conteudo-esquerda">
+            <textarea class="texto" required="" placeholder="Digite seu texto" spellcheck="false"></textarea>
             <div class = "final">
                 <div class="regras">
                     <img src="src/img/info.png" alt="">
@@ -23,8 +24,9 @@
                 </div>
             </div>
         </div>
-        <div class = "conteudo-esquerda">
-            <div class = "conteudo-esquerda-itens">
+        <div class = "conteudo-direita">
+            <p class = "texto_criptografado"></p>
+            <div class = "conteudo-direita-itens">
                 <img src="src/img/menina-azul.png" alt="">
                 <div class="mensagens">
                     <h2>Nenhuma mensagem encontrada</h2>
