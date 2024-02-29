@@ -1,15 +1,15 @@
 let permitido_copiar = true;
 
-const aviso = document.querySelector(".regras p");
+const aviso = document.querySelector(".conteudo-esquerda-regras p");
 const input = document.querySelector(".texto");
-const botao_criptografar = document.querySelector(".cript");
-const botao_descriptografar = document.querySelector(".descript");
-const mensagem_titulo = document.querySelector(".mensagens h2");
-const mensagem_paragrafo = document.querySelector(".mensagens p");
+const botao_criptografar = document.querySelector(".criptografar");
+const botao_descriptografar = document.querySelector(".descriptografar");
 
-const texto_conteudo_direita = document.querySelector(".texto_criptografado");
+const mensagem_titulo = document.querySelector(".conteudo-direita-mensagem h2");
+const mensagem_paragrafo = document.querySelector(".conteudo-direita-mensagem p");
+const texto_conteudo_direita = document.querySelector(".texto-criptografado");
 const imagens_conteudo_direita = document.querySelector(".conteudo-direita-itens");
-const botao_copiar = document.querySelector(".copiar");
+const botao_copiar = document.querySelector(".conteudo-direita-copiar");
 
 input.addEventListener("input", function () {
     const texto = input.value;
@@ -129,4 +129,9 @@ botao_descriptografar.addEventListener("click", function () {
 botao_copiar.addEventListener("click", function () {
     const textoCriptografado = texto_conteudo_direita.textContent;
     navigator.clipboard.writeText(textoCriptografado)
+
+    botao_copiar.textContent = "Copiado!";
+    setTimeout(function () {
+        botao_copiar.textContent = "Copiar";
+    }, 2500);
 });

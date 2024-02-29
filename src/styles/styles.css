@@ -10,9 +10,14 @@
     font-weight: 400;
 }
 
+:root {
+    --cor-fundo: #F3F5FC;
+    --cor-azul-escuro: #0A3871;
+    --cor-branco: #ffffff;
+}
 
 body {
-    background-color: #F3F5FC;
+    background-color: var(--cor-fundo);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -41,15 +46,15 @@ main {
     height: 100%;
     font-size: 25px;
     font-weight: 400;
-    background-color: #F3F5FC;
-    color: #0A3871;
+    background-color: var(--cor-fundo);
+    color: var(--cor-azul-escuro);
     resize: none;
     border: none;
     outline: none;
 }
 
 .texto::placeholder {
-    color: #0a3871e7;
+    color: var(--cor-azul-escuro);
 }
 
 .texto::-webkit-scrollbar {
@@ -57,22 +62,22 @@ main {
 }
 
 .texto::-webkit-scrollbar-thumb {
-    background-color: #0A3871;
+    background-color: var(--cor-azul-escuro);
     border-radius: 25px;
     cursor: pointer;
 }
 
 .texto::-webkit-scrollbar-track {
-    background-color: #F3F5FC;
+    background-color: var(--cor-fundo);
 }
 
-.conteudo-esquerda .final {
+.conteudo-esquerda-final {
     margin: 3% 0;
     display: flex;
     flex-direction: column;
 }
 
-.regras {
+.conteudo-esquerda-regras {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -81,24 +86,24 @@ main {
     
 }
 
-.regras img {
+.conteudo-esquerda-regras img {
     width: 20px;
     margin-left: 4px;
 }
 
-.regras p {
+.conteudo-esquerda-regras p {
     font-size: 15px;
     color: #574949;
     transition: 0.5s;
 }
 
-.conteudo-esquerda .botoes {
+.conteudo-esquerda-botoes {
     display: flex;
     gap: 15px;
 
 }
 
-.conteudo-esquerda .botoes button {
+.conteudo-esquerda-botoes button {
     width: 100%;
     padding: 18px;
     border-radius: 18px;
@@ -106,23 +111,23 @@ main {
     cursor: pointer;
 }
 
-.cript{
-    background-color: #0A3871;
-    color: #ffffff;
+.criptografar {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
     border: none;
 }
 
-.cript:hover {
+.criptografar:hover {
     background-color: #0f50a0;
 }
 
-.descript {
-    border: 1.5px #0A3871 solid;
+.descriptografar {
+    border: 1.5px var(--cor-azul-escuro) solid;
     background-color: #D8DFE8;
-    color: #0A3871
+    color: var(--cor-azul-escuro)
 }
 
-.descript:hover {
+.descriptografar:hover {
     border: 1.5px #1455a5 solid;
     background-color: #f5f2f2;
 }
@@ -135,7 +140,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--cor-branco);
     border-radius: 25px;
     box-shadow: 0 0 10px #0000001e;
     overflow-y: auto;
@@ -147,7 +152,7 @@ main {
 }
 
 .conteudo-direita::-webkit-scrollbar-thumb {
-    background-color: #0A3871;
+    background-color: var(--cor-azul-escuro);
     border-radius: 25px;
     cursor: pointer;
 }
@@ -156,7 +161,7 @@ main {
     background-color: transparent;
 }
 
-.texto_criptografado {
+.texto-criptografado {
     display: none;
     width: 100%;
     font-size: 20px;
@@ -176,7 +181,7 @@ main {
     width: 70%;
 }
 
-.mensagens {
+.conteudo-direita-mensagem {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -185,27 +190,29 @@ main {
     cursor: default;
 }
 
-.mensagens h2 {
+.conteudo-direita-mensagem h2 {
     font-size: 23px;
     font-weight: 500;
 }
 
-.mensagens p {
+.conteudo-direita-mensagem p {
     font-size: 15px;
 }
 
-.copiar {
+.conteudo-direita-copiar {
     display: none;
     width: 100%;
     padding: 18px 0;
     border-radius: 18px;
     font-size: 15px;
     cursor: pointer;
-    border: 1.5px #0A3871 solid;
-    background-color: #ffffff;
-    color: #0A3871;
+    border: 1.5px var(--cor-azul-escuro) solid;
+    background-color: var(--cor-branco);
+    color: var(--cor-azul-escuro);
 }
 
-.copiar:hover {
+.conteudo-direita-copiar:hover {
     border: 1.5px #1356a8 solid;
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
 }
