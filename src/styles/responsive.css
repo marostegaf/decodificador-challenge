@@ -21,7 +21,7 @@
         font-size: 25px;
     }
     
-    .descript {
+    .descriptografar {
         background-color: #ffffff;
     }
 
@@ -57,7 +57,7 @@
         display: none;
     }
 
-    .mensagens {
+    .conteudo-direita-mensagem {
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -91,13 +91,13 @@
         font-size: 25px;
     }
 
-    .conteudo-esquerda .botoes {
+    .conteudo-esquerda-botoes {
         display: flex;
         gap: 10px;
         flex-direction: column;
     }
     
-    .descript {
+    .descriptografar {
         background-color: #ffffff;
     }
 
@@ -134,7 +134,7 @@
         display: none;
     }
 
-    .mensagens {
+    .conteudo-direita-mensagem {
         display: flex;
         flex-direction: column;
         gap: 15px;

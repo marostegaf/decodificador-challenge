@@ -83,7 +83,6 @@ main {
     align-items: center;
     gap: 5px;
     cursor: default;
-    
 }
 
 .conteudo-esquerda-regras img {
@@ -100,7 +99,6 @@ main {
 .conteudo-esquerda-botoes {
     display: flex;
     gap: 15px;
-
 }
 
 .conteudo-esquerda-botoes button {
