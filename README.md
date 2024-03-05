@@ -14,6 +14,8 @@
 - HTML
 - CSS
 - JavaScript
+- Figma
+- Trello
   
 ## 💻 Projeto
 Disponível em: 🔗[Em breve...]()
